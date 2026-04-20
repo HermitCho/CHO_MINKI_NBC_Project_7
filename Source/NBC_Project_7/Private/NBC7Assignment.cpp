@@ -56,6 +56,7 @@ void ANBC7Assignment::Tick(float DeltaTime)
         SpringArmComp->SetRelativeRotation(FRotator(CombinedPitch, 0.0f, 0.0f));
     }
 
+    MoveInput = FVector2D::ZeroVector;
     LookInput = FVector2D::ZeroVector;
 }
 
