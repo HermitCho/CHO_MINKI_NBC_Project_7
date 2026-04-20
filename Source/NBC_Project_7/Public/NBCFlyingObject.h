@@ -41,11 +41,15 @@ protected:
     float MoveSpeed;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
     float LookSensitivity;
+    //중력 가속도
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
     float Gravity;
+    //지상 체크
     bool bIsGrounded;
+    //공중 감속 정도
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
     float AirControlMultiplier;
+    //지상/공중에 따른 중력량
     float CurrentGravity;
 
     UFUNCTION()
@@ -53,5 +57,6 @@ protected:
     UFUNCTION()
     void Look(const FInputActionValue& value);
 
+    //지상 체크 함수
     void CheckGround();
 };

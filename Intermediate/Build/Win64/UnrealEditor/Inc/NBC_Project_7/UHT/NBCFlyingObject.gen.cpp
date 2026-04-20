@@ -165,11 +165,23 @@ struct Z_Construct_UClass_ANBCFlyingObject_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Gravity_MetaData[] = {
 		{ "Category", "Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//\xef\xbf\xbd\xdf\xb7\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd3\xb5\xef\xbf\xbd\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NBCFlyingObject.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xef\xbf\xbd\xdf\xb7\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd3\xb5\xef\xbf\xbd" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AirControlMultiplier_MetaData[] = {
 		{ "Category", "Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NBCFlyingObject.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CapsuleComp;
@@ -251,10 +263,10 @@ ANBCFlyingObject::~ANBCFlyingObject() {}
 struct Z_CompiledInDeferFile_FID_NBC_Project_7_Source_NBC_Project_7_Public_NBCFlyingObject_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANBCFlyingObject, ANBCFlyingObject::StaticClass, TEXT("ANBCFlyingObject"), &Z_Registration_Info_UClass_ANBCFlyingObject, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANBCFlyingObject), 1695624288U) },
+		{ Z_Construct_UClass_ANBCFlyingObject, ANBCFlyingObject::StaticClass, TEXT("ANBCFlyingObject"), &Z_Registration_Info_UClass_ANBCFlyingObject, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANBCFlyingObject), 1293430867U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NBC_Project_7_Source_NBC_Project_7_Public_NBCFlyingObject_h_2254430988(TEXT("/Script/NBC_Project_7"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NBC_Project_7_Source_NBC_Project_7_Public_NBCFlyingObject_h_1243318520(TEXT("/Script/NBC_Project_7"),
 	Z_CompiledInDeferFile_FID_NBC_Project_7_Source_NBC_Project_7_Public_NBCFlyingObject_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NBC_Project_7_Source_NBC_Project_7_Public_NBCFlyingObject_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

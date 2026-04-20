@@ -30,26 +30,20 @@ ANBCFlyingObject::ANBCFlyingObject()
 
     MoveSpeed = 500.0f;
     LookSensitivity = 45.0f;
-    Gravity = 2 * (-980.0f);
+    Gravity = -980.0f;
     bIsGrounded = false;
     AirControlMultiplier = 0.4f;
     CurrentGravity = 0.0f;
 }
 
-// Called when the game starts or when spawned
-void ANBCFlyingObject::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
 void ANBCFlyingObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+    //지상 체크 함수(하단에 있음)
     CheckGround();
 
+    //공중, 지상에 따라 이동 속도 적용.
     float CurrentMoveSpeed = bIsGrounded ? MoveSpeed : MoveSpeed * AirControlMultiplier;
 
     //이동 로직
@@ -59,6 +53,7 @@ void ANBCFlyingObject::Tick(float DeltaTime)
         AddActorLocalOffset(DeltaLocation, true);
     }
 
+    //공중, 지상에 따라 중력 가속도 적용.
     if (bIsGrounded)
     {
         CurrentGravity = 0.0f;
@@ -83,7 +78,6 @@ void ANBCFlyingObject::Tick(float DeltaTime)
     LookInput = FVector3d::ZeroVector;
 }
 
-// Called to bind functionality to input
 void ANBCFlyingObject::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -108,6 +102,7 @@ void ANBCFlyingObject::Look(const FInputActionValue& Value)
     LookInput = Value.Get<FVector3d>();
 }
 
+//지상 체크 함수
 void ANBCFlyingObject::CheckGround()
 {
     FHitResult HitResult;
@@ -118,6 +113,7 @@ void ANBCFlyingObject::CheckGround()
     FCollisionQueryParams Params;
     Params.AddIgnoredActor(this);
 
+    //최종 bool(LineTrace 사용)
     bIsGrounded = GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params);
 
     //지상에 가까울 때, 지상 판정 최소화
