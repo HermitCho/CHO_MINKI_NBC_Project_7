@@ -1,0 +1,34 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/UnrealEngine/NBC_Project_7/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_NBC7Assignment.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_NBC7AssignmentPC.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_NBCGameMode.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IMC_NBC7Assginment.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBC7Look.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IMC_NBCCharacter.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBC7Move.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBC7FlyLook.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_NBCPlayerController.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/Test/IA_NBCJump.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBCJump.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/Test/IA_NBCLook.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBCLook.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/Test/IA_NBCMove.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBCMove.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/Test/IMC_NBCCharacter.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/Test/IA_NBCSprint.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBCSprint.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IA_NBC7FlyMove.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Inputs/IMC_NBC7FlyObject.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_MyNBCFlyingObjectPC.uasset",
+				"D:/UnrealEngine/NBC_Project_7/Content/Blueprints/BP_NBCFlyingObject.uasset"
+			]
+		}
+	]
+}
